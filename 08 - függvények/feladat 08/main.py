@@ -1,5 +1,3 @@
-#7 - A program bekér egy dolgozat pontszámot (x) a felhasználótól és kiír egy érdemjegyet az alábbiak szerint! : 1: x<50; 2: 50<=x<60; 3: 60<=x<70; 4: 70<=x<85; 5: x>=85.
-
 import os
 import time
 
@@ -10,8 +8,6 @@ def hibakiiras(szoveg:str):
     print(szoveg)
     time.sleep(3)
     os.system("cls")
-
-#pontszambekeres
 
 def pontszambekeres()->int:
     eredmeny:int=None
@@ -25,8 +21,6 @@ def pontszambekeres()->int:
                 return eredmeny
         else:
             hibakiiras("Nem számot adott meg!")
-
-#pontszamvizsgalas
 
 def pontszamvizsgalas(pontszam:int)->int :
     eredmeny:int=None
@@ -43,12 +37,8 @@ def pontszamvizsgalas(pontszam:int)->int :
 
     return eredmeny
 
-#kiiras
-
 def kiiras(erdemjegy:int):
     print(f"Az ön érdemjegye: {erdemjegy}.")
-
-#főprogram
 
 felhasznalopontszama=pontszambekeres()
 felhasznaloErdemjegye=pontszamvizsgalas(felhasznalopontszama)
