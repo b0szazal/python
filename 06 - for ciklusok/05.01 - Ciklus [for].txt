@@ -1,0 +1,27 @@
+1 – Írjuk ki a számokat 2-tól 15-ig növekvő sorrendbe.
+2 – Írjuk ki a számokat 0-tól -8-ig csökkenő sorrendbe.
+3 – Írjuk ki növekvő sorrendbe a számokat 3 és 11 között.
+4 – Írjuk ki csökkenő sorrendbe a számokat -8 és 6 között. 
+5 – Írjuk ki csökkenő sorrendbe a  páros számokat -10 és 10 között. 
+6 – Írjuk ki növekvő sorrendbe a  páratlan számokat -11 és 11 között. [HF] 
+7 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd írjuk ki csökkenő sorrendbe a számokat az intervallumból. 
+8 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd írjuk ki növekvő  sorrendbe a páratlan számokat az intervallumból. 
+9 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd írjuk ki csökkenő sorrendbe a  páros számokat az intervallumból. 
+10 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd adjuk össze e intervallum számait és írjuk ki a számok összegét és szorzát!
+11 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd adjuk határozzuk meg az intervallum páros számainak összegét, illetve a páratlan számok szorzatát.
+12 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), számoljuk meg, hogy e intervallumban hány szám osztható hárommal. 
+13 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd intervallumban ellenőrizzük, hogy a páros vagy páratlan számok összege e a nagyobb. 
+14 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd intervallumban ellenőrizzük, hogy az öttel vagy a héttel osztható számok összege e a nagyobb. 
+15 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket), majd az intervallumban ellenőrizzük, hogy hány olyan páratlan szám van a két szám közt mely osztható 3-al. 
+16 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket) majd határozzuk meg a páros és a páratlan számok összegének az átlagát.
+17 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket) majd határozzuk meg az intervallum átlagát.
+18 – A felhasználótól kérjünk be egy intervallumot (kezdő és vég értéket). Az első elemet adjuk hozzá az összeghez, a másodikat vonjuk ki, a harmadikat újra adjuk hozzá az összeghez, a negyediket vonjuk ki az összegből … és így tovább.
+	Példa:
+
+	osszeg = 0;
+
+	{5, 6, 7, 8, 9, 10}
+
+	0 + 5 – 6 + 7 – 8 + 9 - 10
+
+

@@ -1,0 +1,11 @@
+1 – Olvassunk be konzolról két számot és adjuk össze. Az eredményt az „eredmeny” változóba tároljuk el és írjuk is ki a képernyőre.
+
+2 – Olvassunk be konzolról három számot. Az első kettő összegéből vonjuk ki a harmadik számot. Az eredményt az „eredmeny” változóba tároljuk el és írjuk is ki a képernyőre.
+
+3 – Olvassunk be konzolról három számot. Az első kettő különbségét szorozzuk be a harmadik számmal. Az eredményt az „eredmeny” változóba tároljuk el és írjuk is ki a képernyőre.
+
+4 – Olvassunk be konzolról három számot. Az első kettő szorzatát osszuk el a harmadik számmal. Az eredményt az „eredmeny” változóba tároljuk el és írjuk is ki a képernyőre.
+
+5 – Olvassunk be konzolról négy számot. Adjuk össze az első kettőt. Vonjuk ki egymásból a harmadik és negyedik számot. Határozzuk meg a két eredmény hányadosát. Az eredményt az „eredmeny” változóba tároljuk el és írjuk is ki a képernyőre.
+
+6 – Olvassunk be konzolról két számot. Az első számhoz adjunk hozzá 0,5-t. A másodikból vonjunk ki 0,7-t. E két eredmény szorzatát osszuk el egy harmadik beolvasott számmal és a kapott eredmény maradékát írjuk ki.

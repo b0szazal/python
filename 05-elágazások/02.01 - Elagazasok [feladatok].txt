@@ -1,0 +1,34 @@
+1. Egy beolvasott számról döntse el a program hogy nagyobb e 0-nál, ha igen írja is ki!
+
+2. A képernyőre írjuk ki hogy ,,pozitiv,, ha a beolvasott szám nagyobb vagy egyenlő nulával, ha viszont kisebbb akkor hogy ,,negativ,,.
+ 
+3. Egy beolvasott számról döntse el a program hogy -30 és 40 között van-e!
+
+4. Két beolvasott szám közül írassuk ki a nagyobbikat!
+
+5. Rendezünk sorba 2 egész számot! (írja ki a kisebbet, majd a nagyobbat)
+
+6. Rendezzünk sorba 3 egész számot!
+
+7. Olvassunk be egy számot  konzolról és állapítsuk meg, hogy osztható e 5-el. 
+
+8. Olvassunk be egy számot  konzolról és állapítsuk meg, hogy osztható e 4-el és 6-al is.
+
+9. Olvassunk be két egész  számot, x és y,  konzolról és állapítsuk meg, hogy az y osztójja e az x-nek.
+
+10. Olvassunk be egy egész számot. Ha a szám osztható 2-vel, írjuk ki hogy „BIZ”, ha osztható 3-al, írjuk ki hogy „BAZ” és ha osztható 2-vel és 3-al is akkor írjuk ki, hogy „ZIZI”.
+
+11. Olvassunk be egy számot, majd e számról állapítsuk meg, hogy páros/páratlan, pozitív/negatív és osztható-e öttel.
+
+12. Olvassunk be konzolról egy számot, majd állapítsuk meg, hogy ez a szám 10 és 20 közt van-e, vagy -10 és -20 közt. 
+
+13. Olvassunk be konzolról egy számot, majd állapítsuk meg, hogy ez a szám 0 és 9 közt van-e, vagy 10 és 99 , vagy 100 és 999 közt. 
+	Ha 0 és 9 közt  van írjuk ki, hogy egyjegyű szám.
+	Ha 10 és 99 közt  van írjuk ki, hogy kétegyű szám.
+	Ha 100 és 999 közt  van írjuk ki, hogy háromegyű szám.
+
+14. Olvassunk be konzolról három számot : x, y és z. Állapítsuk meg, hogy az X osztható e Y-nal, osztható e Z-vel és és osztható e mindkettővel!
+
+feladat IKT-ra : 
+		  milyne alapon jutottam a megoldásig
+		  mi a megoldás

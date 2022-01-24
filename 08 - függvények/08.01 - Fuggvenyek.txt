@@ -1,0 +1,21 @@
+1 - Írjunk programot amely összead, kivon, szoroz és eloszt két számot. A matematikai műveleteket függvényekkel oldjuk meg.
+
+2 - Írjunk programot amely megkérdezi a felhasználó nevét majd üdvözlő szöveggel üdvözli. 
+Egyes logikai egészeket alkotó műveleteket függvényekkel oldjuk meg.
+
+3 - Írjunk programot amely megkérdezi a felhasználó nevét és születési évét, majd kiírja : ”Atila ön az idén 43 éves.”
+Egyes logikai egészeket alkotó műveleteket függvényekkel oldjuk meg
+
+4 – Írj egy mértékegység konvertáló programot. Az átalakítást Celsius-ból függvénnyel oldjuk meg amely két paramétert kap! Az első egy hőmérséklet érték, a második paraméter pedig azt jelzi milyen mértékegységre akarjuk átkonvertálni (’F’: Fahrenheit, ’K’: Kelvin). 
+(K = C+273,15; F = 9/5*C+32).
+Egyes logikai egészeket alkotó műveleteket függvényekkel oldjuk meg.
+
+5 – Deviza konvertáló programot kell írnunk, mely a megadott HUF forintot japán jen, dollár és svájci frankba konvertálja kiválasztás alapján. Az árfolyamokat konstans változóba helyezzük el. Minden konverzió után jelenítsük meg az értéket EUR-ban is, ha tudjuk, hogy 1 JPY = 0.75EUR, 1USD = 0.8EUR és 1CHF = 0.55EUR.
+Egyes logikai egészeket alkotó műveleteket függvényekkel oldjuk meg.
+
+6 - Virág és Jázmin számkitalálós játékot készített, a következő módom:
+Virág gondolt két számra, az első 0 és 9 közt, a második 40 és 50 közt, majd a számítógép egy véletlen számot (rnd) generált titokban e két érték közt, amit Jázmin nem láthatott. 
+Jázmin feladata az volt, hogy a véletlen számot kitalálja.
+A program eredményként Jázmin próbálkozásainak számát írta ki miután kitalálta a számítógép által választott számot. Minden beírt szám után a program Jázmint értesítette, hogy nagyobb vagy kisebb a kitalálandó szám mint amit ő beírt.
+
+7 - A program bekér egy dolgozat pontszámot (x) a felhasználótól és kiír egy érdemjegyet az alábbiak szerint! : 1: x<50; 2: 50<=x<60; 3: 60<=x<70; 4: 70<=x<85; 5: x>=85.

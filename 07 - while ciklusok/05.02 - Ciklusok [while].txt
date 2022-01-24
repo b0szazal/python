@@ -1,0 +1,31 @@
+1 – Kérjük meg a felhasználót, hogy adjon meg egy 0 – 9 közötti számot. Addig ismételjük amíg nem lesz jó a bevitel! Jó bevitel után írjuk ki ezt a számot a képernyőre
+
+2 – Írjunk programot, amely bekéri a nevünket, és ha azt megadtuk, akkor üdvözlő szöveggel 
+	üdvözli a felhasználót.
+
+3 – A számítógép random generáljon egy számot 0 és 9 között. Majd a felhasználónak ki kell találni ezt a számot 5 nekifutásból.
+
+4 – Írjunk programot, amely a felhasználótól addig kér be számokat, még azok összege meghaladja a 100-at. Minden bekérés után jelezni a felhasználónak a jelenlegi összeget és a hányadik bevitelnél tart.
+
+5 – Írjunk programot, amelyben a felhasználó megad egy határértéket (min 100), majd a felhasználótól addig kér be számokat, még azok összege nem haladja meg a határértéket. Minden bekérés után jelezni a felhasználónak a jelenlegi összeget.  Ha az összeg eléri a határértéket akkor kiírni, hány lépésben érte el a felhasználó azt.
+
+6 - Olvassunk be egy életkort 0-99 között. Addig ismételjük amíg nem lesz jó a bevitel! Adjuk meg hogy melyik korosztályba esik az illető!
+	(0-6: gyerek, 7-18: iskolás, 19-65: dolgozó, 65- nyugdíjas)
+
+7 – Kérjünk be egy számot és egy másikat úgy, hogy nagyobb legyen az elsőnél. Számoljunk visszafelé a nagyobbik számtól a kisebbik felé. (A feladat kiegészíthető azzal, hogy bekérjük a lépésközt is, ami kisebb kell legyen a két szám különbségénél.)
+
+8 – Keszítsünk automata menüt ahol egy szám egy üdítőt jelent. A felhasználónak választania kell üdítőt, de csak azokból amelyek a kínálatban vannak. Amennyiben nem azt választjuk nem kapunk üdítőt.
+
+9 – Kérjünk be egy 3 jegyű  számot és állapítsuk meg, hogy osztható e 7-el. Addig ismételjük a bekérést, amíg nem 3 jegyű a megadott szám.
+
+10- Kérjünk be egy max 2 jegyű, pozitív n számot:
+	Írjuk ki 0 és n közt a páros számokat
+	Adjuk össze 0 és n közt az 5-el osztható számokat
+	Számoljuk meg, hány szám osztható 0 és n közt 11-el
+	Írjuk ki azon számokat 0 és n közt amelyek 7-el osztva 3-at adnak maradékul
+
+11 – Írjunk programot amely a felhasználótól bekér egy páros majd egy tőlle nagyobb páratlan számot. A következő lépésben generáljunk egy véletlen számot e két érték közt és határozzuk meg mely szám (páros vagy páratlan) van messzebb a véletlen számunktól.
+	 Számítsuk ki a két bekért érték közti átlagot is.
+	 Számoljuk meg a 4-el osztható számok számát is.
+
+12 - Van egy kis megtakarított pénzem (min 10.000, max 50.000). Arra vagyok kíváncsi, hogy hány hónap múlva éri el ez az összeg a bankban a 100 000 Ft-ot, ha havi 2%-os kamattal számolhatok?
