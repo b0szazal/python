@@ -37,9 +37,9 @@ def pontszamvizsgalas(pontszam:int)->int :
 
     return eredmeny
 
-def kiiras(erdemjegy:int):
-    print(f"Az ön érdemjegye: {erdemjegy}.")
+def kiiras(pontszam:int, erdemjegy:int):
+    print(f"Az ön érdemjegye {pontszam} pontnál: {erdemjegy}.")
 
 felhasznalopontszama=pontszambekeres()
 felhasznaloErdemjegye=pontszamvizsgalas(felhasznalopontszama)
-kiiras(felhasznaloErdemjegye)
+kiiras(felhasznalopontszama ,felhasznaloErdemjegye)
