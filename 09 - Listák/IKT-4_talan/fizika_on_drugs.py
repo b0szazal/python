@@ -38,9 +38,10 @@ def hozzaadas(dobotszam:int, hozzaadas:List[int])->List[int]:
     hozzaadas.append(dobottszam)
     return hozzaadas
 
-def helyzet(bal:List[int], jobb:List[int], kozeplista:List[int]):
+def helyzet(bal:List[int], jobb:List[int], kozeplista:List[int], dobasszam:int):
     print(f"A jelenlegi állás {len(bal)}-{len(kozeplista)}-{len(jobb)}")
-    time.sleep(1)
+    if (dobasszam<=100):
+        time.sleep(0.25)
 
 dobasokszama:int=szambeolvasas()
 for i in range(0, dobasokszama, 1):
@@ -55,4 +56,4 @@ for i in range(0, dobasokszama, 1):
         kivetel(dobottszam, jobboldal)
         hozzaadas(dobottszam, baloldal)
 
-    helyzet(baloldal, jobboldal, kozep)
+    helyzet(baloldal, jobboldal, kozep, dobasokszama)

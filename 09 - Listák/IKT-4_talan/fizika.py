@@ -6,6 +6,13 @@ import random
 baloldal:List[int]=[1, 2, 3, 4, 5, 6]
 jobboldal:List[int]=[]
 helyzetek:List[str]=[]
+hatnulla:int=0
+otegy:int=0
+negyketto:int=0
+haromharom:int=0
+kettonegy:int=0
+egyot:int=0
+nullahat:int=0
 
 def hibakiiras(szoveg):
     print(szoveg)
@@ -38,9 +45,10 @@ def hozzaadas(dobotszam:int, hozzaadas:List[int])->List[int]:
     hozzaadas.append(dobottszam)
     return hozzaadas
 
-def helyzet(bal:List[int], jobb:List[int]):
+def helyzet(bal:List[int], jobb:List[int], dobasszam:int):
     print(f"A jelenlegi állás {len(bal)}-{len(jobb)}")
-    time.sleep(1)
+    if (dobasszam<=100):
+        time.sleep(0.25)
 
 dobasokszama:int=szambeolvasas()
 for i in range(0, dobasokszama, 1):
@@ -52,4 +60,21 @@ for i in range(0, dobasokszama, 1):
         kivetel(dobottszam, jobboldal)
         hozzaadas(dobottszam, baloldal)
 
-    helyzet(baloldal, jobboldal)
+    if (len(baloldal)==6):
+        hatnulla+=1
+    elif(len(baloldal)==5):
+        otegy+=1
+    elif(len(baloldal)==4):
+        negyketto+=1
+    elif(len(baloldal)==3):
+        haromharom+=1
+    elif(len(baloldal)==2):
+        kettonegy+=1
+    elif(len(baloldal)==1):
+        egyot+=1
+    else:
+        nullahat+=1
+
+    helyzet(baloldal, jobboldal, dobasokszama)
+
+print(f"Összesítés \n 6-0: {hatnulla} \n 5-1: {otegy} \n 4-2: {negyketto} \n 3-3: {haromharom} \n 2-4: {kettonegy} \n 1-5: {egyot} \n 0-6: {nullahat}")

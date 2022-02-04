@@ -10,4 +10,7 @@ szam:float=lista[2]
 print(szam)
 #rossz insert
 lista.insert(45, 10)
-print(lista[45])
+#print(lista[45])
+
+kiskutyak:Tuple[str]=("a", "b")
+print(kiskutyak)
