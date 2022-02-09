@@ -5,7 +5,6 @@ import random
 
 baloldal:List[int]=[1, 2, 3, 4, 5, 6]
 jobboldal:List[int]=[]
-helyzetek:List[str]=[]
 hatnulla:int=0
 otegy:int=0
 negyketto:int=0
@@ -45,10 +44,9 @@ def hozzaadas(dobotszam:int, hozzaadas:List[int])->List[int]:
     hozzaadas.append(dobottszam)
     return hozzaadas
 
-def helyzet(bal:List[int], jobb:List[int], dobasszam:int):
+def helyzet(bal:List[int], jobb:List[int]):
     print(f"A jelenlegi állás {len(bal)}-{len(jobb)}")
-    if (dobasszam<=100):
-        time.sleep(0.25)
+    time.sleep(0.25)
 
 dobasokszama:int=szambeolvasas()
 for i in range(0, dobasokszama, 1):
@@ -75,6 +73,7 @@ for i in range(0, dobasokszama, 1):
     else:
         nullahat+=1
 
-    helyzet(baloldal, jobboldal, dobasokszama)
+    if(dobasokszama<=100):
+        helyzet(baloldal, jobboldal)
 
 print(f"Összesítés \n 6-0: {hatnulla} \n 5-1: {otegy} \n 4-2: {negyketto} \n 3-3: {haromharom} \n 2-4: {kettonegy} \n 1-5: {egyot} \n 0-6: {nullahat}")

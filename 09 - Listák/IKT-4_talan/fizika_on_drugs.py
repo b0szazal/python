@@ -3,7 +3,7 @@ import time
 import os
 import random
 
-baloldal:List[int]=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 , 17, 18, 19, 20]
+baloldal:List[int]=[]
 kozep:List[int]=[]
 jobboldal:List[int]=[]
 
@@ -43,8 +43,12 @@ def helyzet(bal:List[int], jobb:List[int], kozeplista:List[int], dobasszam:int):
     if (dobasszam<=100):
         time.sleep(0.25)
 
+listabetoltes:int=szambeolvasas()
+for i in range(0, listabetoltes, 1):
+    baloldal.append(i)
+
 dobasokszama:int=szambeolvasas()
-for i in range(0, dobasokszama, 1):
+for j in range(0, dobasokszama, 1):
     dobottszam:int=dobas()
     if (dobottszam in baloldal):
         kivetel(dobottszam, baloldal)
