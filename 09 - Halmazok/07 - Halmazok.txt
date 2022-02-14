@@ -1,0 +1,39 @@
+1. Töltsünk fel egy listát a felhasználó által megadott elemű random számokkal:
+	Írassuk ki a tartalmát fordított sorrendben
+	Számítsuk ki az elemek összegét
+	Átlagoljuk a tömbelemeket
+	Írassuk ki a páros elemeket
+	Számoljuk meg, hogy hány két jegyű szám van a tömbben
+	Írassuk ki az egyjegyű számokat
+	Számítsuk ki a páratlan számok összegét
+	Számoljuk meg hány nullára végződő szám van a tömbben
+	Rakjuk sorba a tömböt növekvő/csökkenő sorrendbe
+
+2. Töltsünk fel egy listát véletlenszerű 3 jegyű egész számokkal
+	Számítsuk ki az elemek összegét
+	Számítsuk ki az elemek átlagát
+	Számoljuk meg hány szám van 500 felett!
+
+3.Dobjunk egy dobókockával egymás után 7-szer, az eredményeket tároljuk el!
+	Számoljuk ki a dobások átlagát
+	Számoljuk meg hány hatos dobás történt
+	Számoljuk meg hány dobás volt páratlan
+	
+4. Töltsünk fel egy listát [-100, 100 közt] a felhasználó által megadott elem számmal. E listából távolítsuk el a negatív előjelű elemeket. Ezen elemekből (eltávolítottak) készítsünk egy új listát.
+
+5. Kérjük be egy dolgozó bruttó fizetését 12 hónapra. 
+	Számoljuk ki mennyi SZJA –t fizet (az évi fizetés összegének 33,5%-a)
+	Számoljuk ki mennyi egészségügyi hozzájárulást (SZJA 45%-a) és nyugdíjalapot fizetett (SZJA 55%-a )
+
+6. Töltsünk fel a felhasználó által megadott számú random számokkal (-100 és 100 közt) egy listát, majd határozzuk meg:
+	Pozitív és negatív számok számát a tömbben
+	A legkisebb számot és annak indexét
+	A legnagyobb számot és annak indexét
+	A pozitív elemekből hozzunk létre egy új tömböt
+	Hozzunk létre egy új tömböt, amely az eredeti fordítottja
+	Számoljuk meg hány olyan elem van, mely nagyobb a tömb átlagától
+	Két, a felhasználó által definiált hosszúságú tömb összege egy új tömbe
+	Két, a felhasználó által definiált hosszúságú tömb összege átlósan
+	Egy mondat szavait írjuk ki a szavak hossza szerint
+	Készítsen új tömböt mely az eredeti tömb pozitív számait tartalmazza
+
