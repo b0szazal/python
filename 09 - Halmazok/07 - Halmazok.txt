@@ -8,6 +8,8 @@
 	Számítsuk ki a páratlan számok összegét
 	Számoljuk meg hány nullára végződő szám van a tömbben
 	Rakjuk sorba a tömböt növekvő/csökkenő sorrendbe
+	Keressük ki a legnagyobb számot
+	Írassuk ki a legkisebb érték indexét
 
 2. Töltsünk fel egy listát véletlenszerű 3 jegyű egész számokkal
 	Számítsuk ki az elemek összegét
