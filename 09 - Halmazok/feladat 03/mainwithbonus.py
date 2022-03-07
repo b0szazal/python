@@ -46,22 +46,17 @@ def paratlanok(lista:List[int])->int:
 #bonusz
 
 def dobottszamokszama(lista:List[int])->Dict[int, int]:
-    dobottszamok:Dict[int, int]={
-        1: 0,
-        2: 0, 
-        3: 0,
-        4: 0,
-        5: 0,
-        6: 0
-    }
+    dobottszamok:Dict[int, int]={}
+
+    for i in range(1, 7, 1):
+        dobottszamok[i]=0
+        
     for item in lista:
         for i in range(1, len(dobottszamok)+1, 1):
             if (item == i):
-                dobottszamok[item]= dobottszamok[item]+1
-
+                dobottszamok[item] +=1
+    
     return dobottszamok
-
-
 
 def szotarkiiratas(szotar:Dict[int, int]):
     for key, item in szotar.items():

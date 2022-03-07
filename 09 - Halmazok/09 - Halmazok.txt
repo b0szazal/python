@@ -1,0 +1,9 @@
+7. Két számokat tartalmazó listát töltsünk fel random számokkal, úgy hogy a program kezelője a program elején megadja, hogy hány elemre lehet számítani (1<n<5)  az első lista még a második (5<n<10) ellem közt rendelkezik. 
+  - Fűzzük össze őket, rakjuk növekvő sorrendbe és írjuk ki. 
+  - Határozzuk meg az összefűzött lista átlagát és írjuk ki.
+
+8. Egy egész számokat tartalmazó listát töltsünk fel billentyűzetről oly módon, hogy a listába nem kerülhet be ugyanazon szám többször is!
+   Ha a program kezelője olyan számot írna be, amely már volt, akkor a program ezt jelezze ki!
+   A bevitelt a kezelő akkor fejezheti be, ha sikerült neki egymás után háromszor is olyan értéket beírni, amely még nem szerepelt korábban (amit a program elfogad).
+   A program a bevitel végén írja vissza az adatokat a képernyőre, a számokat egymás mellé írva, vesszővel elválasztva, és hogy hány alkalommal adott meg a felhasználó olyan számot ami már volt! 
+

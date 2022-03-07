@@ -1,3 +1,8 @@
+#Van 1-6-ig egy-egy számozott kör egy dobozban, és van egy üres dobozunk.
+#amikor dobunk egy dobókockával egy számot akkor az a szám a másik dobozba kerül
+#a dobások számát a felhasználótól kérjük be vagy random számmal generáljuk le
+#a dobások után kiírassuk ki a helyzeteket
+
 from typing import *
 import time
 import os
