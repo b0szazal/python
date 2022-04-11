@@ -1,102 +1,102 @@
-#Van 1-6-ig egy-egy számozott kör egy dobozban, és van egy üres dobozunk.
-#amikor dobunk egy dobókockával egy számot akkor az a szám a másik dobozba kerül
-#a dobások számát a felhasználótól kérjük be vagy random számmal generáljuk le
-#a dobások után kiírassuk ki a helyzeteket
-
 from typing import *
 import time
 import os
 import random
 import webbrowser
 
-baloldal:List[int]=[1, 2, 3, 4, 5, 6]
-jobboldal:List[int]=[]
-hatnulla:int=0
-otegy:int=0
-negyketto:int=0
-haromharom:int=0
-kettonegy:int=0
-egyot:int=0
-nullahat:int=0
+elemszam:int=None
+eredetihalmaz:List[int]=[]
+harommaloszthatok:List[int]=[]
+harommaloszthatokosszeg:int=0
+harommaloszthatokatlag:float=0
+otteloszthatodeharommalnemosztahok:List[int]=[]
+otteloszthatodeharommalnemosztahokosszeg:int=0
+otteloszthatodeharommalnemosztahokatlag:float=0
 
-def hibakiiras(szoveg):
+def hibakiiras(szoveg:str):
     print(szoveg)
     time.sleep(3)
     os.system("cls")
 
-def szambeolvasas()->int:
+def elemszambekeres()->int:
     eredmeny:int=None
-    while (eredmeny==None or eredmeny<0):
-        data:str=input("Kérem adja meg a dobások számát:  ")
+    while(eredmeny==None or eredmeny<10):
+        data:str=input("Kérem adja meg a 2 halmaz elemszámát (min. 10):  ")
         if(data.replace("-", "").isnumeric()):
             eredmeny=int(data)
-            if(eredmeny<0):
-                hibakiiras("Negatív számszor nem lehet dobni.")
-            else:
-                return eredmeny
+            if(eredmeny<10):
+                hibakiiras("Nem megfelelő számot adott meg.")
         else:
             hibakiiras("Nem számot adott meg.")
 
-def dobas()->int:
-    eredmeny:int=random.randint(1, 6)
     return eredmeny
 
-def kivetel(dobotszam:int, kivetel:List[int])->List[int]:
-    megtalalas:int=kivetel.index(dobottszam)
-    del(kivetel[megtalalas])
-    return kivetel
+def listatoltes(elemszama:int)->List[int]:
+    eredmeny:List[int]=[]
+    rndszan:int=0
+    for i in range(elemszama):
+        rndszan=random.randint(-100, 100)
+        eredmeny.append(rndszan)
 
-def hozzaadas(dobotszam:int, hozzaadas:List[int])->List[int]:
-    hozzaadas.append(dobottszam)
-    return hozzaadas
+    return eredmeny
 
-def helyzet(bal:List[int], jobb:List[int]):
-    print(f"A jelenlegi állás {len(bal)}-{len(jobb)}")
-    time.sleep(0.25)
+def harommaloszthatoklist(lista:List[int])->List[int]:
+    eredmeny:List[int]=[]
+    for item in lista:
+        if (item % 3 == 0):
+            eredmeny.append(item)
 
-dobasokszama:int=szambeolvasas()
-for i in range(0, dobasokszama, 1):
-    dobottszam:int=dobas()
-    if (dobottszam in baloldal):
-        kivetel(dobottszam, baloldal)
-        hozzaadas(dobottszam, jobboldal)
+    return eredmeny
+
+def otteloszthatodeharommalnemosztahoklist(lista:List[int])->List[int]:
+    eredmeny:List[int]=[]
+    for item in lista:
+        if (item % 3 != 0 and item % 5 == 0):
+            eredmeny.append(item)
+
+    return eredmeny
+
+def kiiras(lista:List[int]):
+    for item in lista:
+        print(f"{item}", end="  ")
+
+def osszeg(lista:List[int])->int:
+    eredmeny:int=0
+    for item in lista:
+        eredmeny +=item
+
+    return eredmeny
+
+def melyikatlaganagyobb(otososszeg:int, otosatlag:float, harmasosszeg:int, harmasatlag:float):
+    if(otosatlag > harmasatlag):
+        print(f"Az öttel osztható átlaga ({otosatlag}, összege: {otososszeg}) nagyobb mint a hárommal osztható átlaga ({harmasatlag}, összege: {harmasosszeg})")
+    elif(otosatlag < harmasatlag):
+        print(f"Az hárommal osztható átlaga ({harmasatlag}, összege: {harmasosszeg}) nagyobb mint az öttel osztható átlaga ({otosatlag}, összege: {otososszeg})")
     else:
-        kivetel(dobottszam, jobboldal)
-        hozzaadas(dobottszam, baloldal)
+        print(f"Az hárommal osztható átlaga ({harmasatlag}, összege: {harmasosszeg}) egyenlő az öttel osztható átlaga ({otosatlag}, összege: {otososszeg})")
 
-    if (len(baloldal)==6):
-        hatnulla+=1
-    elif(len(baloldal)==5):
-        otegy+=1
-    elif(len(baloldal)==4):
-        negyketto+=1
-    elif(len(baloldal)==3):
-        haromharom+=1
-    elif(len(baloldal)==2):
-        kettonegy+=1
-    elif(len(baloldal)==1):
-        egyot+=1
-    else:
-        nullahat+=1
+elemszam=elemszambekeres()
+eredetihalmaz=listatoltes(elemszam)
 
-    if(dobasokszama<=100):
-        helyzet(baloldal, jobboldal)
+harommaloszthatok=harommaloszthatoklist(eredetihalmaz)
+harommaloszthatokosszeg=osszeg(harommaloszthatok)
+harommaloszthatokatlag= harommaloszthatokosszeg / len(harommaloszthatok)
 
-print(f"Összesítés \n 6-0: {hatnulla} \n 5-1: {otegy} \n 4-2: {negyketto} \n 3-3: {haromharom} \n 2-4: {kettonegy} \n 1-5: {egyot} \n 0-6: {nullahat}")
+otteloszthatodeharommalnemosztahok=otteloszthatodeharommalnemosztahoklist(eredetihalmaz)
+otteloszthatodeharommalnemosztahokosszeg=osszeg(otteloszthatodeharommalnemosztahok)
+otteloszthatodeharommalnemosztahokatlag=otteloszthatodeharommalnemosztahokosszeg / len(otteloszthatodeharommalnemosztahok)
 
+print("Az eredeti halmaz:")
+kiiras(eredetihalmaz)
 
+print("\nA halmaz hárommal osztható elemei:")
+kiiras(harommaloszthatok)
 
+print("\nA halmaz öttel osztható de hárommal nem osztható elemei:")
+kiiras(otteloszthatodeharommalnemosztahok)
 
-
-
-
-
-
-
-
-
-
-
+print("\n")
+melyikatlaganagyobb(otteloszthatodeharommalnemosztahokosszeg, otteloszthatodeharommalnemosztahokatlag, harommaloszthatokosszeg, harommaloszthatokatlag)
 
 
 
